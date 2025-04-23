@@ -1,7 +1,6 @@
 import process from 'node:process';
 
 const parseArgs = () => {
-  console.log(process.argv)
   const cliArgs = process.argv.slice(2).reduce((args, value) => {
     if (value.startsWith('--')) {
       args.push([ null, null ])
