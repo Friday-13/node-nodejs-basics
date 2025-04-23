@@ -13,6 +13,7 @@ const rename = async () => {
     if (err.code === "ENOENT" || err.code === "EEXIST") {
       throw new Error(failMessage);
     }
+    throw err;
   }
 };
 
